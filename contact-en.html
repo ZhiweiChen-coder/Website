@@ -2,81 +2,96 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boundless Youth Forum - Contact Us</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Boundless Youth Forum — Contact</title>
+    <meta name="description" content="Contact Boundless Youth Forum. Email us, connect via WeChat QR, and follow on Xiaohongshu.">
+    <meta property="og:title" content="Boundless Youth Forum — Contact">
+    <meta property="og:description" content="Email, WeChat QR, and Xiaohongshu badge for Boundless Youth Forum.">
+    <meta property="og:type" content="website">
+    <link rel="alternate" hreflang="en" href="/contact-en.html">
+    <link rel="alternate" hreflang="zh-Hans" href="/contact-zh.html">
+    <link rel="alternate" hreflang="x-default" href="/contact-en.html">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="nav-top">
-        <div class="nav-header">
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                ☰
-            </button>
-        </div>
-        <ul class="nav-menu-top">
-            <li><a href="index-en.html">Home</a></li>
-            <li><a href="about-en.html">About Us</a></li>
-            <li><a href="team-en.html">Our Team</a></li>
-            <li><a href="activities-en.html">Activities</a></li>
-            <li><a href="services-en.html">Services</a></li>
-            <li><a href="contact-en.html">Contact</a></li>
-        </ul>
-    </nav>
-
-    <a href="contact.html" class="language-switch">中文</a>
-
-    <!-- Top Banner -->
-    <div class="top-banner">
-        <div class="site-name">Boundless Youth Forum</div>
-        <img src="logo.jpg" alt="Boundless Youth Forum Logo" class="logo">
-    </div>
-
-    <!-- Header Section -->
-    <header class="header fade-in">
-        <div class="title-container">
-            <h1>Boundless Youth Forum</h1>
-            <div class="title-english">无界青年论坛</div>
-        </div>
-        <nav class="nav-center">
-            <ul class="nav-menu-center">
-                <li><a href="index-en.html">Home</a></li>
-                <li><a href="about-en.html">About Us</a></li>
-                <li><a href="team-en.html">Our Team</a></li>
-                <li><a href="activities-en.html">Activities</a></li>
-                <li><a href="services-en.html">Services</a></li>
-                <li><a href="contact-en.html">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="bottom-content">
-            <div class="slogan-container">
-                <h2 class="slogan">Boundless Exchange, Infinite Future!</h2>
-                <p class="description">Welcome to Boundless Youth Forum, a platform showcasing core values of youth organizations. Explore our forum to learn more about our members, services, activities, and future vision, and join us in unlocking infinite possibilities!</p>
-            </div>
-            <div class="gradient-box"></div>
+    <header class="header" role="banner">
+        <div class="container header-inner">
+            <a class="brand" href="index-en.html"><img src="assets/images/logo.jpg" alt="Boundless Youth Forum"></a>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+            <nav aria-label="Primary" data-open="false">
+                <ul>
+                    <li><a href="index-en.html">Home</a></li>
+                    <li><a href="about-en.html">About</a></li>
+                    <li><a href="services-en.html">Services</a></li>
+                    <li><a href="activities-en.html">Activities</a></li>
+                    <li><a href="team-en.html">Team</a></li>
+                    <li><a href="contact-en.html">Contact</a></li>
+                    <li>
+                        <button id="lang-toggle" class="btn btn-outline" type="button" aria-pressed="false">中文 / EN</button>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <!-- Contact Section -->
-    <section id="about" class="section fade-in">
-        <div class="section-title">
-            <h2>Contact Us</h2>
-            <div class="en-title">联系我们</div>
+    <main id="content" class="container" tabindex="-1">
+        <section class="section" aria-labelledby="contact-title">
+            <div class="section-title">
+                <h1 id="contact-title">Contact Us</h1>
+                <div class="en-title">联系我们</div>
+            </div>
+            <div class="grid cols-2">
+                <div class="card">
+                    <h2>Email</h2>
+                    <p><a href="mailto:peterchan@nasa-global.com">peterchan@nasa-global.com</a></p>
+                </div>
+                <div class="card">
+                    <h2>WeChat & Xiaohongshu</h2>
+                    <div class="grid cols-3 mt-4">
+                        <div>
+                            <img src="assets/images/微信群 copy.png" alt="WeChat Group QR" width="150" height="150" loading="lazy">
+                            <p class="en-title mt-2">WeChat Group</p>
+                        </div>
+                        <div>
+                            <img src="assets/images/微信小助手.jpg" alt="WeChat Assistant QR" width="150" height="150" loading="lazy">
+                            <p class="en-title mt-2">WeChat Assistant</p>
+                        </div>
+                        <div>
+                            <img src="assets/images/小红书 copy.jpg" alt="Xiaohongshu badge" width="150" height="150" loading="lazy">
+                            <p class="en-title mt-2">Xiaohongshu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container footer-grid">
+            <section aria-labelledby="mission-title">
+                <h3 id="mission-title">Mission</h3>
+                <p>Empower global youth through cross-border advisory, events, and community.</p>
+            </section>
+            <nav aria-labelledby="quick-links-title">
+                <h3 id="quick-links-title">Quick Links</h3>
+                <ul>
+                    <li><a href="about-en.html">About</a></li>
+                    <li><a href="services-en.html">Services</a></li>
+                    <li><a href="activities-en.html">Activities</a></li>
+                    <li><a href="team-en.html">Team</a></li>
+                    <li><a href="contact-en.html">Contact</a></li>
+                </ul>
+            </nav>
+            <section aria-labelledby="contact2-title">
+                <h3 id="contact2-title">Contact</h3>
+                <p><a href="mailto:peterchan@nasa-global.com">peterchan@nasa-global.com</a></p>
+            </section>
         </div>
-        <div class="section-content" style="text-align: center;">
-            <h3>Boundless Youth Forum</h3>
-            <div style="height: 50px;"></div> 
-            <h3>Email: peterchan@nasa-global.com</h3>
-            <div style="height: 50px;"></div>
-            <h3>WeChat Assistant: Boundless_youth</h3>
+        <div class="container bottom-strip">
+            <small>© 2025 Boundless Youth Forum / 无界青年论坛. All rights reserved.</small>
         </div>
-    </section>
-    
-    <div style="height: 50px;"></div> 
-    
-    <!-- Footer Section -->
-    <footer class="footer">
-        <p style="text-align: center;">&copy; 2025 Boundless Youth Forum. All rights reserved.</p>
     </footer>
-    <script src="main.js" defer></script>
+
+    <script src="js/main.js" defer></script>
 </body>
 </html> 
