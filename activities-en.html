@@ -16,7 +16,9 @@
 <body>
     <header class="header" role="banner">
         <div class="container header-inner">
-            <a class="brand" href="index-en.html"><img src="assets/images/logo.jpg" alt="Boundless Youth Forum"></a>
+            <a class="brand" href="index-en.html">
+                <img src="assets/images/logo.jpg" alt="Boundless Youth Forum">
+            </a>
             <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
             <nav aria-label="Primary" data-open="false">
                 <ul>
@@ -74,20 +76,9 @@
                 <h3 id="mission-title">Mission</h3>
                 <p>Empower global youth through cross-border advisory, events, and community.</p>
             </section>
-            <nav aria-labelledby="quick-links-title">
-                <h3 id="quick-links-title">Quick Links</h3>
-                <ul>
-                    <li><a href="about-en.html">About</a></li>
-                    <li><a href="services-en.html">Services</a></li>
-                    <li><a href="activities-en.html">Activities</a></li>
-                    <li><a href="team-en.html">Team</a></li>
-                    <li><a href="contact-en.html">Contact</a></li>
-                </ul>
-            </nav>
             <section aria-labelledby="contact-title">
                 <h3 id="contact-title">Contact</h3>
                 <p><a href="mailto:peterchan@nasa-global.com">peterchan@nasa-global.com</a></p>
-                <p class="en-title">WeChat Group & Xiaohongshu available on homepage</p>
             </section>
         </div>
         <div class="container bottom-strip">
@@ -100,13 +91,23 @@
         // Event data
         const EVENTS_EN = [
             {
+                slug: "juanhu-20250708",
+                title: "Juanhu Summer Gathering for Returning Talents",
+                date: "2025-07-08",
+                location: "Haining, Zhejiang",
+                tags: ["Talent", "Visit"],
+                cover: "assets/images/events/juanhu-20250708/鹃湖行1.webp",
+                href: "activities/activity-juanhu-20250708-en.html",
+                excerpt: "Top students delegation visits Juanhu International Science City for policy and industry connections."
+            },
+            {
                 slug: "wuzhen-2025",
                 title: "Chasing Dreams in Wuzhen · New Journey of Science and Innovation",
-                date: "2025-12-15",
+                date: "2025-08-08",
                 location: "Wuzhen, Zhejiang",
                 tags: ["Wuzhen Cup", "Competition"],
                 cover: "assets/images/events/wuzhen-2025/乌镇杯获奖1.jpg",
-                href: "activity-wuzhen-2025-en.html",
+                href: "activities/activity-wuzhen-2025-en.html",
                 excerpt: "5th 'Wuzhen Cup' High-level Talent Entrepreneurship Innovation Competition Finals, focusing on cutting-edge technology and industry implementation."
             },
             {
@@ -116,38 +117,28 @@
                 location: "London, UK",
                 tags: ["Global Entrepreneurship", "Roadshow"],
                 cover: "assets/images/events/london-2025/伦敦路演1.JPG",
-                href: "activity-london-2025-en.html",
+                href: "activities/activity-london-2025-en.html",
                 excerpt: "30+ quality projects registered, 6 excellent projects shortlisted for the roadshow, 3 projects won 'Excellence Innovation Award'."
-            },
-            {
-                slug: "haining-20250917",
-                title: "Jiankang Biotech Wins Second Prize in Haining Entrepreneurship Competition",
-                date: "2025-09-17",
-                location: "Haining, Zhejiang",
-                tags: ["Life Sciences", "Competition"],
-                cover: "assets/images/events/haining-20250917/海宁获奖1.jpg",
-                href: "activity-haining-20250917-en.html",
-                excerpt: "Won second prize in the 13th 'Rising East, Winning in Haining' entrepreneurship competition."
             },
             {
                 slug: "gosim-2025",
                 title: "Boundless Youth Forum at GOSIM HANGZHOU 2025",
-                date: "2025-01-15",
+                date: "2025-09-13",
                 location: "Hangzhou, Zhejiang",
                 tags: ["Open Source", "AI"],
-                cover: "assets/images/events/gosim-2025/gosim.jpg",
-                href: "activity-gosim-2025-en.html",
+                cover: "assets/images/events/gosim-2025/gosim1.jpg",
+                href: "activities/activity-gosim-2025-en.html",
                 excerpt: "200+ open source and AI leaders and 1500+ developers discussing next-generation AI."
             },
             {
-                slug: "juanhu-20250708",
-                title: "Juanhu Summer Gathering for Returning Talents",
-                date: "2025-07-08",
+                slug: "haining-20250917",
+                title: "Jiankang Biotech Wins Second Prize in Haining Entrepreneurship Competition",
+                date: "2025-09-16",
                 location: "Haining, Zhejiang",
-                tags: ["Talent", "Visit"],
-                cover: "assets/images/events/juanhu-20250708/鹃湖行1.webp",
-                href: "activity-juanhu-20250708-en.html",
-                excerpt: "Top students delegation visits Juanhu International Science City for policy and industry connections."
+                tags: ["Life Sciences", "Competition"],
+                cover: "assets/images/events/haining-20250917/海宁获奖1.jpg",
+                href: "activities/activity-haining-20250917-en.html",
+                excerpt: "Won second prize in the 13th 'Rising East, Winning in Haining' entrepreneurship competition."
             }
         ];
 
