@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boundless Youth Forum / 无界青年论坛</title>
+    <meta name="description" content="Boundless Youth Forum - Empowering global youth through advisory, events, and community. 无界青年论坛 - 通过咨询、活动与社区赋能全球青年。">
+    
+    <!-- 自动检测用户语言并重定向 -->
+    <script>
+        // 检测用户语言偏好
+        const userLang = navigator.language || navigator.userLanguage;
+        
+        // 如果用户语言是中文（包括简体中文、繁体中文等），重定向到中文版
+        if (userLang.startsWith('zh')) {
+            window.location.href = 'index-zh.html';
+        } else {
+            // 否则重定向到英文版
+            window.location.href = 'index-en.html';
+        }
+    </script>
+    
+    <!-- 备用重定向（如果JavaScript被禁用） -->
+    <meta http-equiv="refresh" content="0; url=index-en.html">
+    
+    <!-- 样式 -->
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            padding: 2rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        .links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        .btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-color: rgba(255, 255, 255, 0.5);
+            transform: translateY(-2px);
+        }
+        .loading {
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>无界青年论坛</h1>
+        <h1>Boundless Youth Forum</h1>
+        <p class="subtitle">交流无界，未来无限！<br>Boundless Exchange, Infinite Future!</p>
+        
+        <div class="links">
+            <a href="index-zh.html" class="btn">中文版 / Chinese</a>
+            <a href="index-en.html" class="btn">English</a>
+        </div>
+        
+        <p class="loading">正在跳转... / Redirecting...</p>
+    </div>
+</body>
+</html>
