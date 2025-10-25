@@ -38,44 +38,57 @@
 
     <main id="content" class="container" tabindex="-1">
         <section class="section" aria-labelledby="contact-title">
-            <div class="section-title">
+            <div class="section-title reveal">
                 <h1 id="contact-title">Contact Us</h1>
                 <div class="en-title">联系我们</div>
             </div>
-            <div class="grid cols-2">
-                <div class="card">
+            <div class="grid cols-2 reveal-stagger">
+                <div class="card reveal">
                     <h2>Email</h2>
                     <p><a href="mailto:peterchan@nasa-global.com">peterchan@nasa-global.com</a></p>
                 </div>
-                <div class="card">
-                    <h2>WeChat & Xiaohongshu</h2>
-                    <div class="grid cols-3 mt-4">
-                        <div>
-                            <img src="assets/images/微信群 copy.png" alt="WeChat Group QR" width="150" height="150" loading="lazy">
-                            <p class="en-title mt-2">WeChat Group</p>
+                <section id="follow" class="section">
+                    <div class="container">
+                        <div class="section-header reveal-scale">
+                            <h2 class="section-title">关注我们</h2>
+                            <p class="section-subtitle">在你喜欢的平台上与我们互动</p>
                         </div>
-                        <div>
-                            <img src="assets/images/微信小助手.jpg" alt="WeChat Assistant QR" width="150" height="150" loading="lazy">
-                            <p class="en-title mt-2">WeChat Assistant</p>
-                        </div>
-                        <div>
-                            <img src="assets/images/小红书 copy.jpg" alt="Xiaohongshu badge" width="150" height="150" loading="lazy">
-                            <p class="en-title mt-2">Xiaohongshu</p>
+                        <div class="grid grid-3 reveal-stagger">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <img src="assets/images/community/公众号 copy.jpg" alt="微信公众号二维码" width="150" height="150" loading="lazy" style="margin: 0 auto var(--space-4);">
+                                    <h3 class="card-title">微信公众号</h3>
+                                    <p class="text-muted">WeChat Official</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <img src="assets/images/community/微信小助手.jpg" alt="微信小助手二维码" width="150" height="150" loading="lazy" style="margin: 0 auto var(--space-4);">
+                                    <h3 class="card-title">微信小助手</h3>
+                                    <p class="text-muted">WeChat Assistant</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <img src="assets/images/community/小红书 copy.jpg" alt="小红书徽章" width="150" height="150" loading="lazy" style="margin: 0 auto var(--space-4);">
+                                    <h3 class="card-title">小红书</h3>
+                                    <p class="text-muted">Xiaohongshu</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div style="text-align: center; margin-top: 60px; margin-bottom: 40px;">
-                <a href="https://www.wjx.cn/vm/wFbMc1s.aspx" target="_blank" class="btn btn-primary" style="font-size: 18px; padding: 16px 32px; font-weight: 600;">Join Forum Membership</a>
-            </div>
+                </section>
         </section>
+        <div style="text-align: center; margin-top: 60px; margin-bottom: 40px;">
+            <a href="https://www.wjx.cn/vm/wFbMc1s.aspx" target="_blank" class="btn btn-primary" style="font-size: 18px; padding: 16px 32px; font-weight: 600;">Join Forum Membership</a>
+        </div>
     </main>
 
     <footer class="footer" role="contentinfo">
         <div class="container footer-grid">
             <section aria-labelledby="mission-title">
                 <h3 id="mission-title">Mission</h3>
-                <p>Empower global youth through cross-border advisory, events, and community.</p>
+                <p>Gather global youth, connect infinite resources!</p>
             </section>
             <section aria-labelledby="contact2-title">
                 <h3 id="contact2-title">Contact</h3>
@@ -87,6 +100,7 @@
         </div>
     </footer>
 
+    <script src="js/scroll-reveal.js"></script>
     <script src="js/main.js" defer></script>
 </body>
 </html> 

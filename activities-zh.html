@@ -36,35 +36,31 @@
         </div>
     </header>
 
-    <main id="content" class="container" tabindex="-1">
-        <section class="section hero" aria-labelledby="hero-title">
-            <div class="hero-content">
-                <h1 id="hero-title" class="gradient-text">活动回顾</h1>
-                <p class="subhead">连接海内外青年创新力量的精彩瞬间</p>
-            </div>
-        </section>
-
-        <section class="section" aria-labelledby="events-title">
-            <div class="section-title">
-                <h2 id="events-title">精彩活动</h2>
-                <div class="en-title">Featured Events</div>
-            </div>
+    <main>
+        <section class="section">
+            <div class="container">
+                <div class="section-title reveal">
+                    <h1>精彩活动</h1>
+                    <div class="en-title">Featured Events</div>
+                </div>
             
-            <div class="events-grid" id="events-container">
+            <div class="grid grid-3 reveal-stagger" id="events-container">
                 <!-- 活动卡片将通过 JavaScript 动态生成 -->
             </div>
         </section>
 
-        <section class="section" aria-labelledby="cta-title" data-variant="alt">
-            <div class="section-title">
-                <h2 id="cta-title">加入我们的社区</h2>
-                <div class="en-title">Join Our Community</div>
-            </div>
-            <div class="section-content">
-                <p>关注我们的最新活动，与全球青年创新者一起成长</p>
-                <div class="mt-6">
-                    <a href="contact-zh.html" class="btn btn-primary">联系我们</a>
-                    <a href="index-zh.html#follow" class="btn btn-outline">关注我们</a>
+        <section class="section" style="background: var(--color-surface);">
+            <div class="container">
+                <div class="section-header reveal-scale">
+                    <h2 class="section-title">加入我们的社区</h2>
+                    <p class="section-subtitle">Join Our Community</p>
+                </div>
+                <div class="text-center reveal">
+                    <p class="mb-6">关注我们的最新活动，与全球青年创新者一起成长</p>
+                    <div class="mt-6">
+                        <a href="contact-zh.html" class="btn btn-primary">联系我们</a>
+                        <a href="index-zh.html#follow" class="btn btn-outline">关注我们</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -74,7 +70,7 @@
         <div class="container footer-grid">
             <section aria-labelledby="mission-title">
                 <h3 id="mission-title">愿景</h3>
-                <p>通过跨境咨询、活动与社区，赋能全球青年成长与合作。</p>
+                <p>汇聚全球青年，链接无限资源！</p>
             </section>
             <section aria-labelledby="contact-title">
                 <h3 id="contact-title">联系方式</h3>
@@ -96,7 +92,7 @@
                 date: "2025-07-08",
                 location: "浙江 · 海宁",
                 tags: ["人才", "参访"],
-                cover: "assets/images/events/juanhu-20250708/鹃湖行1.webp",
+                cover: "assets/images/events/juanhu-20250708/鹃湖行1.jpg",
                 href: "activities/activity-juanhu-20250708-zh.html",
                 excerpt: "顶尖学子代表团走进鹃湖国际科技城，深入对接政策与产业。"
             },
@@ -171,5 +167,6 @@
         // 页面加载完成后渲染
         document.addEventListener('DOMContentLoaded', renderEvents);
     </script>
+    <script src="js/scroll-reveal.js"></script>
 </body>
 </html>

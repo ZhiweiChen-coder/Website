@@ -38,17 +38,20 @@
 
     <main id="content" class="container" tabindex="-1">
         <section class="section hero" aria-labelledby="hero-title">
+            <!-- 科技背景动画 -->
+            <div class="tech-bg"></div>
+            
             <div class="grid cols-2">
-                <div>
+                <div class="reveal-left">
                     <div class="brand-title">无界青年论坛</div>
-                    <h1 id="hero-title" class="gradient-text">交流无界，未来无限！</h1>
+                    <h1 id="hero-title" class="gradient-text scan-line">交流无界，未来无限！</h1>
                     <p class="subhead">通过咨询、活动与社区网络，为全球青年提供职业、科研与创业方面的赋能与机会。</p>
                     <div class="mt-6">
-                        <a class="btn btn-primary" href="about-zh.html">了解更多</a>
-                        <a class="btn btn-outline" href="contact-zh.html">加入我们</a>
+                        <a class="btn btn-primary btn-tech" href="about-zh.html">了解更多</a>
+                        <a class="btn btn-outline btn-tech" href="contact-zh.html">加入我们</a>
                     </div>
                 </div>
-                <div class="carousel" aria-roledescription="carousel" aria-label="活动照片">
+                <div class="carousel reveal-right" aria-roledescription="carousel" aria-label="活动照片">
                     <div class="carousel-track">
                         <a href="activities/activity-wuzhen-2025-zh.html" class="carousel-slide">
                             <img src="assets/images/events/wuzhen-2025/乌镇杯获奖1.jpg" alt="活动 — 乌镇杯获奖" loading="lazy">
@@ -72,7 +75,7 @@
                             </div>
                         </a>
                         <a href="activities/activity-juanhu-20250708-zh.html" class="carousel-slide">
-                            <img src="assets/images/events/juanhu-20250708/鹃湖行1.webp" alt="活动 — 鹃湖之约" loading="lazy">
+                            <img src="assets/images/events/juanhu-20250708/鹃湖行1.jpg" alt="活动 — 鹃湖之约" loading="lazy">
                             <div class="carousel-overlay">
                                 <h3>鹃湖之约</h3>
                                 <p>归国英才仲夏荟——顶尖学子代表团走进鹃湖国际科技城</p>
@@ -93,86 +96,134 @@
             </div>
         </section>
 
-        <section class="section" aria-labelledby="what-title">
-            <div class="section-title">
-                <h2 id="what-title">我们做什么</h2>
-                <div class="en-title">What we do</div>
-            </div>
-            <div class="grid cols-3">
-                <div class="card"><h3>创业咨询</h3><p class="en-title">Advisory</p></div>
-                <div class="card"><h3>活动策划</h3><p class="en-title">Events</p></div>
-                <div class="card"><h3>社区链接</h3><p class="en-title">Community</p></div>
-            </div>
-            <a href="services-zh.html" class="btn btn-outline" style="margin-top: 20px;">了解服务</a>
-        </section>
-
-        <section id="about" class="section" aria-labelledby="about-title">
-            <div class="section-title">
-                <h2 id="about-title">关于我们</h2>
-                <div class="en-title">About Us</div>
-            </div>
-            <div class="section-content">
-                <p>无界青年论坛创立于2024年，由青年创业者、科学家与行业精英联合发起，是一个致力于全球青年创新创业的多元化平台。论坛通过组织线上线下的深度交流活动，链接资源、启发灵感，打造开放包容的国际化创业社群。</p>
-                <p>我们已成功策划乌镇杯海外赛区、津航杯等的创业大赛、圆桌讨论与归国访问，并与众多创业者、投资人、企业高管进行深度访谈，推动中外青年在创业道路上的深度合作。</p>
-                <a href="about-zh.html" class="btn btn-outline mt-4">进一步了解</a>
-            </div>
-        </section>
-        
-        <section id="team" class="section" aria-labelledby="team-title">
-            <div class="section-title">
-                <h2 id="team-title">我们的团队</h2>
-                <div class="en-title">Our Team</div>
-            </div>
-            <div class="section-content">
-                <p>目前，论坛拥有 100+ 来自全球的核心会员，覆盖人工智能、医疗健康、文化创意、金融科技等前沿领域，致力于为青年提供跨行业、跨领域的支持与合作机会。成员及社群伙伴包括多家估值超千万美元的明星初创企业，如 Convergence AI、Ridescan、Camel AI等。</p>
-                <div class="achievement-list">
-                    <div class="card">
-                        <h3>创业成就</h3>
-                        <p>多位成员获得数百万元融资，入选人才计划，实现百万级营收，推动多项技术落地。</p>
+        <section class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">我们做什么</h2>
+                    <p class="section-subtitle">三大支柱支撑全球青年创新</p>
+                </div>
+                <div class="grid grid-3 reveal-stagger">
+                    <div class="card card-tech tech-float">
+                        <div class="card-body">
+                            <h3 class="card-title">创业咨询</h3>
+                            <p class="card-description">为创业、职业发展和学术研究提供专业指导，助力青年找到正确方向。</p>
+                            <span class="text-muted">Advisory</span>
+                        </div>
                     </div>
-                    <div class="card">
-                        <h3>国际荣誉</h3>
-                        <p>成员曾获金鸡奖、圣安德鲁十字勋章、Lumen Prize、红点奖等重要奖项。</p>
+                    <div class="card card-tech tech-float">
+                        <div class="card-body">
+                            <h3 class="card-title">活动策划</h3>
+                            <p class="card-description">高质量的线上线下交流活动、创业大赛和实践工作坊，连接全球人才。</p>
+                            <span class="text-muted">Events</span>
+                        </div>
                     </div>
-                    <div class="card">
-                        <h3>学术贡献</h3>
-                        <p>成员在 ICLR、IEEE、ICML 等顶级期刊会议发表论文，谷歌学术引用 1500+。</p>
+                    <div class="card card-tech tech-float">
+                        <div class="card-body">
+                            <h3 class="card-title">社区链接</h3>
+                            <p class="card-description">一个开放包容的平台，促进跨行业、跨国界的深度合作与资源对接。</p>
+                            <span class="text-muted">Community</span>
+                        </div>
                     </div>
                 </div>
-                <a href="team-zh.html" class="btn btn-outline" style="margin-top: 20px;">认识团队</a>
+                <div class="text-center mt-8 reveal">
+                    <a href="services-zh.html" class="btn btn-primary btn-tech">了解所有服务</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header reveal-left">
+                    <h2 class="section-title">关于我们</h2>
+                    <p class="section-subtitle">2024年成立，连接全球青年创新者</p>
+                </div>
+                <div class="reveal-right">
+                    <p>无界青年论坛创立于2024年，由青年创业者、科学家与行业精英联合发起，是一个致力于全球青年创新创业的多元化平台。论坛通过组织线上线下的深度交流活动，链接资源、启发灵感，打造开放包容的国际化创业社群。</p>
+                    <p>我们已成功策划乌镇杯海外赛区、津航杯等的创业大赛、圆桌讨论与归国访问，并与众多创业者、投资人、企业高管进行深度访谈，推动中外青年在创业道路上的深度合作。</p>
+                    <div class="text-center mt-8">
+                        <a href="about-zh.html" class="btn btn-primary">进一步了解</a>
+                    </div>
+                </div>
             </div>
         </section>
         
-        <section id="activities" class="section" aria-labelledby="activities-title">
-            <div class="section-title">
-                <h2 id="activities-title">我们的活动</h2>
-                <div class="en-title">Our Activities</div>
-            </div>
-            <div class="section-content">
-                <p>无界青年论坛积极参与并承办多项具有国际影响力的创新创业赛事与交流活动，接收众多优质创新创业项目，助力项目落地与人才对接。</p>
-                <a href="activities-zh.html" class="btn btn-outline mt-4">查看活动</a>
+        <section id="team" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">我们的团队</h2>
+                    <p class="section-subtitle">100+ 全球创新者，遍布AI、医疗、金融科技等领域</p>
+                </div>
+                <div class="reveal">
+                    <p class="text-center" style="max-width: 700px; margin: 0 auto var(--space-8);">目前，论坛拥有 100+ 来自全球的核心会员，覆盖人工智能、医疗健康、文化创意、金融科技等前沿领域。成员及社群伙伴包括多家估值超千万美元的明星初创企业，如 Convergence AI、Ridescan、Camel AI等。</p>
+                </div>
+                <div class="grid grid-3 reveal-stagger">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">创业成就</h3>
+                            <p class="card-description">多位成员获得数百万元融资，入选人才计划，实现百万级营收，推动多项技术落地。</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">国际荣誉</h3>
+                            <p class="card-description">成员曾获金鸡奖、圣安德鲁十字勋章、Lumen Prize、红点奖等重要奖项。</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">学术贡献</h3>
+                            <p class="card-description">成员在 ICLR、IEEE、ICML 等顶级期刊会议发表论文，谷歌学术引用 1500+。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-8 reveal">
+                    <a href="team-zh.html" class="btn btn-primary">认识团队</a>
+                </div>
             </div>
         </section>
         
-        
-        <section id="follow" class="section" aria-labelledby="follow-title" data-variant="alt">
-            <div class="section-title">
-                <h2 id="follow-title">关注我们</h2>
-                <div class="en-title">Follow us</div>
+        <section id="activities" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">我们的活动</h2>
+                    <p class="section-subtitle">通过讨论、工作坊和网络连接人才</p>
+                </div>
+                <div class="reveal">
+                    <p class="text-center" style="max-width: 700px; margin: 0 auto var(--space-8);">无界青年论坛积极参与并承办多项具有国际影响力的创新创业赛事与交流活动，接收众多优质创新创业项目，助力项目落地与人才对接。</p>
+                    <div class="text-center">
+                        <a href="activities-zh.html" class="btn btn-primary">查看所有活动</a>
+                    </div>
+                </div>
             </div>
-            <div class="section-content">
-                <div class="grid cols-3">
+        </section>
+
+        <section id="follow" class="section">
+            <div class="container">
+                <div class="section-header reveal-scale">
+                    <h2 class="section-title">关注我们</h2>
+                    <p class="section-subtitle">在你喜欢的平台上与我们互动</p>
+                </div>
+                <div class="grid grid-3 reveal-stagger">
                     <div class="card">
-                        <img src="assets/images/community/公众号 copy.jpg" alt="微信公众号二维码" width="150" height="150" loading="lazy">
-                        <p class="mt-4">微信公众号</p>
+                        <div class="card-body text-center">
+                            <img src="assets/images/community/公众号 copy.jpg" alt="微信公众号二维码" width="150" height="150" loading="lazy" style="margin: 0 auto var(--space-4);">
+                            <h3 class="card-title">微信公众号</h3>
+                            <p class="text-muted">WeChat Official</p>
+                        </div>
                     </div>
                     <div class="card">
-                        <img src="assets/images/community/微信小助手.jpg" alt="微信小助手二维码" width="150" height="150" loading="lazy">
-                        <p class="mt-4">微信小助手</p>
+                        <div class="card-body text-center">
+                            <img src="assets/images/community/微信小助手.jpg" alt="微信小助手二维码" width="150" height="150" loading="lazy" style="margin: 0 auto var(--space-4);">
+                            <h3 class="card-title">微信小助手</h3>
+                            <p class="text-muted">WeChat Assistant</p>
+                        </div>
                     </div>
                     <div class="card">
-                        <img src="assets/images/community/小红书 copy.jpg" alt="小红书徽章" width="150" height="150" loading="lazy">
-                        <p class="mt-4">小红书</p>
+                        <div class="card-body text-center">
+                            <img src="assets/images/community/小红书 copy.jpg" alt="小红书徽章" width="150" height="150" loading="lazy" style="margin: 0 auto var(--space-4);">
+                            <h3 class="card-title">小红书</h3>
+                            <p class="text-muted">Xiaohongshu</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -180,21 +231,28 @@
     </main>
 
     <footer class="footer" role="contentinfo">
-        <div class="container footer-grid">
-            <section aria-labelledby="mission-title">
-                <h3 id="mission-title">愿景</h3>
-                <p>通过跨境咨询、活动与社区，赋能全球青年成长与合作。</p>
-            </section>
-            <section aria-labelledby="contact-title">
-                <h3 id="contact-title">联系方式</h3>
-                <p><a href="mailto:peterchan@nasa-global.com">peterchan@nasa-global.com</a></p>
-            </section>
-        </div>
-        <div class="container bottom-strip">
-            <small>© 2025 Boundless Youth Forum / 无界青年论坛. All rights reserved.</small>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h3>愿景</h3>
+                    <p>汇聚全球青年，链接无限资源！</p>
+                </div>
+                <div>
+                    <h3>快速链接</h3>
+                    <p><a href="about-zh.html">关于</a> · <a href="services-zh.html">服务</a> · <a href="team-zh.html">团队</a> · <a href="activities-zh.html">活动</a></p>
+                </div>
+                <div>
+                    <h3>联系方式</h3>
+                    <p><a href="mailto:peterchan@nasa-global.com">peterchan@nasa-global.com</a></p>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <small>© 2025 Boundless Youth Forum / 无界青年论坛. All rights reserved.</small>
+            </div>
         </div>
     </footer>
 
+    <script src="js/scroll-reveal.js"></script>
     <script src="js/main.js" defer></script>
 </body>
 </html>

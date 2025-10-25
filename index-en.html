@@ -38,17 +38,20 @@
 
     <main id="content" class="container" tabindex="-1">
         <section class="section hero" aria-labelledby="hero-title">
+            <!-- 科技背景动画 -->
+            <div class="tech-bg"></div>
+            
             <div class="grid cols-2">
-                <div>
+                <div class="reveal-left">
                     <div class="brand-title">Boundless Youth Forum</div>
-                    <h1 id="hero-title" class="gradient-text">Boundless Exchange, Infinite Future!</h1>
+                    <h1 id="hero-title" class="gradient-text scan-line">Boundless Exchange, Infinite Future!</h1>
                     <p class="subhead">Empowering global youth with advisory, events, and community—across careers, research, and startups.</p>
                     <div class="mt-6">
-                        <a class="btn btn-primary" href="about-en.html">Learn More</a>
-                        <a class="btn btn-outline" href="contact-en.html">Join Us</a>
+                        <a class="btn btn-primary btn-tech" href="about-en.html">Learn More</a>
+                        <a class="btn btn-outline btn-tech" href="contact-en.html">Join Us</a>
                     </div>
                 </div>
-                <div class="carousel" aria-roledescription="carousel" aria-label="Activity photos">
+                <div class="carousel reveal-right" aria-roledescription="carousel" aria-label="Activity photos">
                     <div class="carousel-track">
                         <a href="activities/activity-wuzhen-2025-en.html" class="carousel-slide">
                             <img src="assets/images/events/wuzhen-2025/乌镇杯获奖1.jpg" alt="Event — Wuzhen Cup Award" loading="lazy">
@@ -72,7 +75,7 @@
                             </div>
                         </a>
                         <a href="activities/activity-juanhu-20250708-en.html" class="carousel-slide">
-                            <img src="assets/images/events/juanhu-20250708/鹃湖行1.webp" alt="Event — Juanhu Gathering" loading="lazy">
+                            <img src="assets/images/events/juanhu-20250708/鹃湖行1.jpg" alt="Event — Juanhu Gathering" loading="lazy">
                             <div class="carousel-overlay">
                                 <h3>Juanhu Gathering</h3>
                                 <p>Summer Gathering for Returning Talents at Juanhu International Science City</p>
@@ -93,86 +96,134 @@
             </div>
         </section>
 
-        <section class="section" aria-labelledby="what-title">
-            <div class="section-title">
-                <h2 id="what-title">What we do</h2>
-                <div class="en-title">我们做什么</div>
-            </div>
-            <div class="grid cols-3">
-                <div class="card"><h3>Advisory</h3><p class="en-title">创业咨询</p></div>
-                <div class="card"><h3>Events</h3><p class="en-title">活动策划</p></div>
-                <div class="card"><h3>Community</h3><p class="en-title">社区链接</p></div>
-            </div>
-            <a href="services-en.html" class="btn btn-outline" style="margin-top: 20px;">View Services</a>
-        </section>
-
-        <section id="about" class="section" aria-labelledby="about-title">
-            <div class="section-title">
-                <h2 id="about-title">About Us</h2>
-                <div class="en-title">关于我们</div>
-            </div>
-            <div class="section-content">
-                <p>Founded in 2024, Boundless Youth Forum is a diverse platform for global youth innovation and entrepreneurship, jointly initiated by young entrepreneurs, scientists, and industry elites. Through organizing in-depth online and offline exchange activities, we connect resources, inspire ideas, and build an open and inclusive international entrepreneurial community.</p>
-                <p>We have successfully organized overseas competitions for Wuzhen Cup, Jinhang Cup and other entrepreneurship competitions, roundtable discussions and return visits, and conducted in-depth interviews with numerous entrepreneurs, investors, and corporate executives to promote deep cooperation between Chinese and foreign youth in entrepreneurship.</p>
-                <a href="about-en.html" class="btn btn-outline mt-4">Learn More</a>
-            </div>
-        </section>
-        
-        <section id="team" class="section" aria-labelledby="team-title">
-            <div class="section-title">
-                <h2 id="team-title">Our Team</h2>
-                <div class="en-title">我们的团队</div>
-            </div>
-            <div class="section-content">
-                <p>Currently, the forum has 100+ core members from around the world, covering cutting-edge fields including artificial intelligence, healthcare, cultural creativity, and fintech, dedicated to providing cross-industry and cross-domain support and collaboration opportunities for youth. Members and community partners include several star startups valued at over $10 million, such as Convergence AI, Ridescan, Camel AI, and others.</p>
-                <div class="achievement-list">
-                    <div class="card">
-                        <h3>Successful Startups</h3>
-                        <p>Multiple members have secured millions in funding, including successful selection for Zhejiang talent programs, achieving million-level revenue, and driving multiple technological innovations to market.</p>
+        <section class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">What we do</h2>
+                    <p class="section-subtitle">Three pillars supporting global youth innovation</p>
+                </div>
+                <div class="grid grid-3 reveal-stagger">
+                    <div class="card card-tech tech-float">
+                        <div class="card-body">
+                            <h3 class="card-title">Advisory</h3>
+                            <p class="card-description">Professional guidance for entrepreneurship, career development, and academic research pathways.</p>
+                            <span class="text-muted">创业咨询</span>
+                        </div>
                     </div>
-                    <div class="card">
-                        <h3>International Honors</h3>
-                        <p>Many members have won major international awards, including the Golden Rooster Award, St. Andrews Cross Award, Lumen Prize, and Red Dot Award.</p>
+                    <div class="card card-tech tech-float">
+                        <div class="card-body">
+                            <h3 class="card-title">Events</h3>
+                            <p class="card-description">High-quality networking events, competitions, and workshops connecting global talent.</p>
+                            <span class="text-muted">活动策划</span>
+                        </div>
                     </div>
-                    <div class="card">
-                        <h3>Academic Contributions</h3>
-                        <p>Multiple members have published papers in top global journals including ICLR, IEEE, and ICML, with research cited over 1500 times on Google Scholar.</p>
+                    <div class="card card-tech tech-float">
+                        <div class="card-body">
+                            <h3 class="card-title">Community</h3>
+                            <p class="card-description">An inclusive platform fostering collaboration across industries and borders.</p>
+                            <span class="text-muted">社区链接</span>
+                        </div>
                     </div>
                 </div>
-                <a href="team-en.html" class="btn btn-outline" style="margin-top: 20px;">Meet the Team</a>
+                <div class="text-center mt-8 reveal">
+                    <a href="services-en.html" class="btn btn-primary btn-tech">View All Services</a>
+                </div>
             </div>
         </section>
-        
-        <section id="activities" class="section" aria-labelledby="activities-title">
-            <div class="section-title">
-                <h2 id="activities-title">Our Activities</h2>
-                <div class="en-title">我们的活动</div>
-            </div>
-            <div class="section-content">
-                <p>Through high-quality themed discussions, practical workshops, and resource matching, Boundless Youth Forum helps young people enhance their professional competitiveness, expand research and entrepreneurial resources, and build an open interactive platform.</p>
-                <a href="activities-en.html" class="btn btn-outline mt-4">Explore Activities</a>
-            </div>
-        </section>
-        
 
-        <section id="follow" class="section" aria-labelledby="follow-title" data-variant="alt">
-            <div class="section-title">
-                <h2 id="follow-title">Join our community</h2>
-                <div class="en-title">加入我们的社区</div>
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header reveal-left">
+                    <h2 class="section-title">About Us</h2>
+                    <p class="section-subtitle">Building bridges for global youth innovation since 2024</p>
+                </div>
+                <div class="reveal-right">
+                    <p>Founded in 2024, Boundless Youth Forum is a diverse platform for global youth innovation and entrepreneurship, jointly initiated by young entrepreneurs, scientists, and industry elites. Through organizing in-depth online and offline exchange activities, we connect resources, inspire ideas, and build an open and inclusive international entrepreneurial community.</p>
+                    <p>We have successfully organized overseas competitions for Wuzhen Cup, Jinhang Cup and other entrepreneurship competitions, roundtable discussions and return visits, and conducted in-depth interviews with numerous entrepreneurs, investors, and corporate executives to promote deep cooperation between Chinese and foreign youth in entrepreneurship.</p>
+                    <div class="text-center mt-8">
+                        <a href="about-en.html" class="btn btn-primary btn-tech">Learn More About Us</a>
+                    </div>
+                </div>
             </div>
-            <div class="section-content">
-                <div class="grid cols-3">
+        </section>
+        
+        <section id="team" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Our Team</h2>
+                    <p class="section-subtitle">100+ global innovators across AI, healthcare, fintech, and creative industries</p>
+                </div>
+                <div class="reveal">
+                    <p class="text-center" style="max-width: 700px; margin: 0 auto var(--space-8);">Currently, the forum has 100+ core members from around the world, covering cutting-edge fields including artificial intelligence, healthcare, cultural creativity, and fintech. Members and community partners include several star startups valued at over $10 million, such as Convergence AI, Ridescan, and Camel AI.</p>
+                </div>
+                <div class="grid grid-3 reveal-stagger">
                     <div class="card">
-                        <img src="assets/images/community/公众号 copy.jpg" alt="WeChat Official Account" width="150" height="150" loading="lazy">
-                        <p class="mt-4">WeChat Official Account</p>
+                        <div class="card-body">
+                            <h3 class="card-title">Successful Startups</h3>
+                            <p class="card-description">Multiple members have secured millions in funding, including successful selection for Zhejiang talent programs, achieving million-level revenue, and driving multiple technological innovations to market.</p>
+                        </div>
                     </div>
                     <div class="card">
-                        <img src="assets/images/community/微信小助手.jpg" alt="WeChat Assistant" width="150" height="150" loading="lazy">
-                        <p class="mt-4">WeChat Assistant</p>
+                        <div class="card-body">
+                            <h3 class="card-title">International Honors</h3>
+                            <p class="card-description">Many members have won major international awards, including the Golden Rooster Award, St. Andrews Cross Award, Lumen Prize, and Red Dot Award.</p>
+                        </div>
                     </div>
                     <div class="card">
-                        <img src="assets/images/community/小红书 copy.jpg" alt="Xiaohongshu badge" width="150" height="150" loading="lazy">
-                        <p class="mt-4">Xiaohongshu</p>
+                        <div class="card-body">
+                            <h3 class="card-title">Academic Contributions</h3>
+                            <p class="card-description">Multiple members have published papers in top global journals including ICLR, IEEE, and ICML, with research cited over 1500 times on Google Scholar.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-8 reveal">
+                    <a href="team-en.html" class="btn btn-primary">Meet the Team</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="activities" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Our Activities</h2>
+                    <p class="section-subtitle">Connecting talent through discussions, workshops, and networking</p>
+                </div>
+                <div class="reveal">
+                    <p class="text-center" style="max-width: 700px; margin: 0 auto var(--space-8);">Through high-quality themed discussions, practical workshops, and resource matching, Boundless Youth Forum helps young people enhance their professional competitiveness, expand research and entrepreneurial resources, and build an open interactive platform.</p>
+                    <div class="text-center">
+                        <a href="activities-en.html" class="btn btn-primary">Explore All Activities</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="follow" class="section" style="background: var(--color-surface);">
+            <div class="container">
+                <div class="section-header reveal-scale">
+                    <h2 class="section-title">Join Our Community</h2>
+                    <p class="section-subtitle">Connect with us on your favorite platform</p>
+                </div>
+                <div class="grid grid-3 reveal-stagger">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="assets/images/community/公众号 copy.jpg" alt="WeChat Official Account" width="150" height="150" loading="lazy" style="margin: 0 auto var(--space-4);">
+                            <h3 class="card-title">WeChat Official Account</h3>
+                            <p class="text-muted">微信公众号</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="assets/images/community/微信小助手.jpg" alt="WeChat Assistant" width="150" height="150" loading="lazy" style="margin: 0 auto var(--space-4);">
+                            <h3 class="card-title">WeChat Assistant</h3>
+                            <p class="text-muted">微信小助手</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="assets/images/community/小红书 copy.jpg" alt="Xiaohongshu" width="150" height="150" loading="lazy" style="margin: 0 auto var(--space-4);">
+                            <h3 class="card-title">Xiaohongshu</h3>
+                            <p class="text-muted">小红书</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -180,22 +231,28 @@
     </main>
 
     <footer class="footer" role="contentinfo">
-        <div class="container footer-grid">
-            <section aria-labelledby="mission-title">
-                <h3 id="mission-title">Mission</h3>
-                <p>Empower global youth through cross-border advisory, events, and community.
-                </p>
-            </section>
-            <section aria-labelledby="contact-title">
-                <h3 id="contact-title">Contact</h3>
-                <p><a href="mailto:peterchan@nasa-global.com">peterchan@nasa-global.com</a></p>
-            </section>
-        </div>
-        <div class="container bottom-strip">
-            <small>© 2025 Boundless Youth Forum / 无界青年论坛. All rights reserved.</small>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h3>Mission</h3>
+                    <p>Gather global youth, connect infinite resources!</p>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <p><a href="about-en.html">About</a> · <a href="services-en.html">Services</a> · <a href="team-en.html">Team</a> · <a href="activities-en.html">Activities</a></p>
+                </div>
+                <div>
+                    <h3>Contact</h3>
+                    <p><a href="mailto:peterchan@nasa-global.com">peterchan@nasa-global.com</a></p>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <small>© 2025 Boundless Youth Forum / 无界青年论坛. All rights reserved.</small>
+            </div>
         </div>
     </footer>
 
+    <script src="js/scroll-reveal.js"></script>
     <script src="js/main.js" defer></script>
 </body>
 </html> 

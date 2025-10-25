@@ -1,20 +1,77 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Navigation Toggle
     const navToggle = document.querySelector('.nav-toggle');
-    const navMenuTop = document.querySelector('.nav-menu-top');
+    const navMenu = document.querySelector('.header nav');
 
-    if (navToggle && navMenuTop) {
-        navToggle.addEventListener('click', () => {
-            navMenuTop.classList.toggle('active');
+    console.log('Nav toggle found:', navToggle);
+    console.log('Nav menu found:', navMenu);
+    
+    // 确保移动端导航默认关闭
+    if (navMenu) {
+        navMenu.setAttribute('data-open', 'false');
+        navMenu.style.display = 'none'; // 确保默认隐藏
+    }
+    
+    if (navToggle) {
+        navToggle.setAttribute('aria-expanded', 'false');
+    }
+
+    if (navToggle && navMenu) {
+        console.log('Adding click listener to nav toggle');
+        console.log('Initial data-open:', navMenu.getAttribute('data-open'));
+        
+        // Monitor attribute changes
+        const observer = new MutationObserver((mutations) => {
+            mutations.forEach((mutation) => {
+                if (mutation.type === 'attributes' && mutation.attributeName === 'data-open') {
+                    console.log('⚠️ data-open changed to:', navMenu.getAttribute('data-open'));
+                    console.trace('Changed by:');
+                }
+            });
+        });
+        observer.observe(navMenu, { attributes: true });
+        
+        navToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            e.preventDefault();
+            console.log('=== Nav toggle clicked ===');
+            const currentState = navMenu.getAttribute('data-open');
+            console.log('Before toggle - data-open:', currentState);
+            
+            // Toggle the state
+            if (currentState === 'true') {
+                navMenu.setAttribute('data-open', 'false');
+                navToggle.setAttribute('aria-expanded', 'false');
+                console.log('Set to: false');
+            } else {
+                navMenu.setAttribute('data-open', 'true');
+                navToggle.setAttribute('aria-expanded', 'true');
+                console.log('Set to: true');
+            }
+            
+            // Verify the change
+            setTimeout(() => {
+                const newState = navMenu.getAttribute('data-open');
+                console.log('After toggle - data-open:', newState);
+                if (newState === currentState) {
+                    console.error('❌ State did not change! Something is resetting it.');
+                } else {
+                    console.log('✅ State changed successfully');
+                }
+            }, 10);
         });
 
         // Close menu when clicking outside
         document.addEventListener('click', (event) => {
-            const isClickInsideNav = navToggle.contains(event.target) || navMenuTop.contains(event.target);
-            if (!isClickInsideNav && navMenuTop.classList.contains('active')) {
-                navMenuTop.classList.remove('active');
+            const isClickInsideNav = navToggle.contains(event.target) || navMenu.contains(event.target);
+            if (!isClickInsideNav && navMenu.getAttribute('data-open') === 'true') {
+                console.log('Closing menu from outside click');
+                navMenu.setAttribute('data-open', 'false');
+                navToggle.setAttribute('aria-expanded', 'false');
             }
         });
+    } else {
+        console.error('Navigation elements not found!');
     }
 
     // Fade In Animation
@@ -86,16 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	}
 
-	// Mobile nav toggle
-	var toggle = document.querySelector('.nav-toggle');
-	if(toggle && nav){
-		toggle.setAttribute('aria-expanded', 'false');
-		toggle.addEventListener('click', function(){
-			var open = nav.getAttribute('data-open') === 'true';
-			nav.setAttribute('data-open', String(!open));
-			toggle.setAttribute('aria-expanded', String(!open));
-		});
-	}
+	// Mobile nav toggle - REMOVED (handled at top of file)
 
 	// Lazy image loaded class for fade-in
 	var lazyImages = document.querySelectorAll('img[loading="lazy"]');
@@ -122,4 +170,18 @@ document.addEventListener('DOMContentLoaded', () => {
 		autoplay();
 	}
 })();
+
+// 添加卡片点击反馈效果
+document.addEventListener('click', (e) => {
+    const card = e.target.closest('.card, .event-card');
+    if (card) {
+        // 添加点击反馈类
+        card.classList.add('clicked');
+        
+        // 移除点击反馈类
+        setTimeout(() => {
+            card.classList.remove('clicked');
+        }, 150);
+    }
+});
 
