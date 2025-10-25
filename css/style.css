@@ -871,6 +871,52 @@ img, video {
   }
 }
 
+/* 联系方式样式 */
+.contact-info {
+  margin-top: var(--space-4);
+}
+
+.contact-info h3 {
+  color: var(--color-primary);
+  font-size: 18px;
+  font-weight: 600;
+  margin: var(--space-4) 0 var(--space-2) 0;
+}
+
+.contact-info h3:first-child {
+  margin-top: 0;
+}
+
+.contact-info p {
+  margin: var(--space-1) 0;
+  line-height: 1.6;
+}
+
+.contact-info a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+/* 联系我们页面section间距调整 */
+.contact-page .section {
+  padding: 24px 0; /* 减少section上下间距 */
+}
+
+.contact-page .section:first-child {
+  padding-top: 16px; /* 第一个section顶部间距更小 */
+}
+
+.contact-page .section:last-child {
+  padding-bottom: 16px; /* 最后一个section底部间距更小 */
+}
+
 /* 服务页面卡片内容左边距 */
 
 .card h2,
@@ -1431,7 +1477,7 @@ img, video {
 /* ==================== Responsive ==================== */
 @media (max-width: 767px) {
   .header nav {
-    display: none !important; /* 默认隐藏 */
+    display: none; /* 默认隐藏 */
     position: fixed;
     top: 64px;
     right: -100%;
@@ -1509,7 +1555,7 @@ img, video {
   }
   .header nav {
     position: relative;
-    display: flex;
+    display: flex !important;
   }
   
   .header nav[data-open] {
